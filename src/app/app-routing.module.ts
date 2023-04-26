@@ -1,3 +1,4 @@
+//librerias de módulos
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -6,6 +7,7 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 import { TerminosComponent } from './pages/terminos/terminos.component';
+
 //"Menú de navegación"
 const app_routes: Routes = [
   { path: '', component: PortfolioComponent }, //Ruta principal "localhost:4200"
@@ -18,8 +20,10 @@ const app_routes: Routes = [
 
 //Decorador para importaciones/exportaciones
 @NgModule({
-  imports: [RouterModule.forRoot(app_routes)],
+  imports: [RouterModule.forRoot(app_routes, {useHash: true})],
   exports: [RouterModule],
 })
+
 export class AppRoutingModule {
+
 }

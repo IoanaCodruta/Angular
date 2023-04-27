@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
  year: number = new Date().getFullYear ();
+ day: number = new Date().getDate ();
+ month: number = new Date().getMonth ();
 }

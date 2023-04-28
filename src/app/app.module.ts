@@ -12,6 +12,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { TerminosComponent } from './pages/terminos/terminos.component';
 import { ItemComponent } from './pages/item/item.component';
+import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 
 //Decorador de módulos
 @NgModule({
@@ -23,12 +24,13 @@ import { ItemComponent } from './pages/item/item.component';
     AboutComponent,
     PortfolioComponent,
     TerminosComponent,
-    ItemComponent
+    ItemComponent,
+    ProyectosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule, 
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

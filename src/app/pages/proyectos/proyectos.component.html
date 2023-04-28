@@ -1,0 +1,12 @@
+<section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
+    <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
+      <a *ngFor="let proyecto of infoService.project" routerLink="/item" class="rk-item ae-masonry__item">
+          <img [src]="proyecto.img" alt="" />
+          <div class="item-meta">
+              <h2>{{ proyecto.h2 }}</h2>
+              <p>{{ proyecto.p }}</p>
+          </div>
+      </a>
+    </div>
+  </section>
+  

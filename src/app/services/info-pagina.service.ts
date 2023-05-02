@@ -29,7 +29,7 @@ export class InfoPaginaService {
   private cargarEquipo() {
     this.http
       .get('https://web-app-etif-2023-default-rtdb.europe-west1.firebasedatabase.app/equip.json')
-      .subscribe((resp: InfoPagina) => {
+      .subscribe((resp: any) => {
         this.equipo = resp; // provar resp. I veurem les propietats JSON
         console.log(resp);
       });
@@ -39,9 +39,10 @@ export class InfoPaginaService {
     this.http
       .get(
         'https://web-app-etif-2023-default-rtdb.europe-west1.firebasedatabase.app/projects.json')
-      .subscribe((resp: InfoPagina) => {
+      .subscribe((resp: any) => {
         this.project = resp; // provar resp. I veurem les propietats JSON
         console.log(resp);
       });
 }
 }
+
